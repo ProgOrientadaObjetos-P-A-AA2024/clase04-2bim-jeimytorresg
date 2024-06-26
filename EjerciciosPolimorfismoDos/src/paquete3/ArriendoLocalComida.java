@@ -38,7 +38,11 @@ public class ArriendoLocalComida extends Arriendo {
     public void establecerIva(double x){
         iva = x;
     }
-    
+    /*
+    en esta clase es necesario que se implemente el metodo abstracto porque 
+    porque se hereda de la clase abstracta y se necesita darle un valor
+    a ese atributo mediante el metodo abstracto
+    */
     @Override
     public void establecerArriendoMensual(){
         double subtotal = obtenerValorAgua() + obtenerValorLuz() + 

@@ -47,6 +47,13 @@ public class Ejecutor {
         for (int i = 0; i < listaArriendos.size(); i++) {
             listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
                                                             // métodos abstracto
+            /*
+                dentro del bucle for, no se sabe con certeza que tipo de 
+                dato esta dentro del ArrayList, pero se hace el llamado 
+                al metodo abstracto porque existe en todas las clases hijas 
+                
+                
+            */
             System.out.println(listaArriendos.get(i));
             System.out.println();
         }
